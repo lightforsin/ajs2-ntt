@@ -1,0 +1,12 @@
+<div>
+  <input class="textarea" #newnote>
+
+<button (click)="addNewNote(newnote)">Add new note</button>
+
+List of notes:
+<ul>
+  <li *ngFor="let note of notes; let i=index">
+    ({{ i }}) {{ note }}
+  </li>
+</ul>
+</div>

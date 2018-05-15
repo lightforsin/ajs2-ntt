@@ -1,0 +1,19 @@
+
+<app-top-bar text="my nav bar"></app-top-bar>
+
+<app-notes></app-notes>
+
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+    <br>
+    Hello, {{ myName }}!
+  </h1>
+  <button (click)="click()">Click me</button>
+
+  <h2>Enter your name: </h2>
+  <!--<input [(ngModel)]="name">-->
+  <input #name>
+  <button (click)="update(name.value)">Update</button>
+</div>
+
